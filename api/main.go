@@ -2,7 +2,7 @@
 * @Author: Nessaj
 * @Date:   2019-07-15 16:01:36
 * @Last Modified by:   Nessaj
-* @Last Modified time: 2019-10-28 19:01:21
+* @Last Modified time: 2019-12-10 15:02:27
 */
 
 package main
@@ -49,7 +49,7 @@ func (m middleWareHandler)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func RegisterHandlers() *httprouter.Router{
     router := httprouter.New()
 
-    router.POST("/", CreateUser)
+    router.POST("/user", CreateUser)
 
     router.POST("/user/:user_name", Login  )
 
