@@ -2,7 +2,7 @@
 * @Author: Nessaj
 * @Date:   2019-12-10 15:31:27
 * @Last Modified by:   Nessaj
-* @Last Modified time: 2019-12-10 17:08:32
+* @Last Modified time: 2019-12-19 15:49:01
 */
 
 package main
@@ -19,9 +19,9 @@ type ConnLimiter struct {
 
 
 func NewConnLimiter(cc int) *ConnLimiter{
-    return &ConnLimiter: {
+    return &ConnLimiter{
         concurrentConn: cc,
-        bucket: make(chan int,cc)
+        bucket: make(chan int,cc),
     }
 }
 
